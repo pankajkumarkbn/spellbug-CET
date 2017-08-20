@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/css" rel="stylesheet" href="style.cs"></script>
+<script type='text/javascript'> $Spelling.SpellCheckAsYouType('myTextArea')</script>
+<script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('dict.json', function(data) {
+       $.each(data.person, function(i, f) {
+          var 
+          
+     });
+
+   });
+
+});
+</script>
+<title>GDG BBSR</title>
+<body style="background-color:silver">
+<h1 align="middle">GDG BBSR</h1>
+<h2 align="middle">SPELL BUG</h2>
+
+
+<div align="middle">
+<textarea name="myTextArea" id="myTextArea" cols="50" rows="20">Welcome to GDG bhubaneswar. We are here at CET.
+Googe Developer Groups is excited to host Hackathon here at CET. Exciting isn't it? Looke herei and theire you will get to see coders/developrs everywhere.
+        </textarea>
+</div>
+
+      <div align="middle">  <input type="button" value="Spell Check" onclick="$Spelling.SpellCheckInWindow('myTextArea')">
+        <script>  CKEDITOR.replace( 'myTextArea');</script>
+</div>
+
+<form align="left" form action="/action.txt" method="get">
+  Add A New Word<br>
+  <input type="text" name="new" value=""><br><br>
+  <input type="submit" value="Add to dictionary">
+</form> 
+</body>
+</head>
+</html>
